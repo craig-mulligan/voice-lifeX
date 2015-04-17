@@ -6,4 +6,4 @@ RUN apt-get update
 RUN apt-get install -y sox
 run cd /app && npm install
 
-CMD ["node", "/app/index.js"]
+CMD sudo modprobe snd_bcm2835 && node /app/index.js
