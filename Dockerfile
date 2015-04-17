@@ -5,4 +5,4 @@ COPY . /app
 RUN apt-get install sox
 run cd /app && npm install
 
-CMD ["node", "index.js"]
+CMD ["node", "/app/index.js"]
