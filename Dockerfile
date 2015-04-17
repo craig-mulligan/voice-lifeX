@@ -2,6 +2,6 @@ FROM resin/rpi-node:0.10.22
 
 COPY . /app
 
-RUN npm install && apt-get install sox
+RUN  apt-get install sox && cd /app && npm install
 
 CMD ["node", "index.js"]
